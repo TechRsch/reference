@@ -15,6 +15,9 @@ gem 'pg'
 gem 'rolify'
 gem 'simple_form'
 gem 'thin'
+group :production do
+  gem 'rails_12factor'  # For Heroku
+end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
